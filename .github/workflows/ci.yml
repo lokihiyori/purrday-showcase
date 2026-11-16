@@ -21,8 +21,10 @@ jobs:
       - uses: actions/checkout@v5
 
       # The core may not import SwiftUI, UIKit or SwiftData; building it on Linux enforces that.
+      # LocalizationTests checks the string catalogs in Resources/, which stay in the private
+      # repository, so this snapshot skips that one suite.
       - name: Build and test PurrdayCore
         run: |
           swift --version
           swift build --package-path Core
-          swift test --package-path Core
+          swift test --package-path Core --skip LocalizationTests

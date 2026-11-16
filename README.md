@@ -125,8 +125,11 @@ Resources/   not included in this snapshot (artwork, audio, fonts, strings)
 The core package needs Swift 6.2 or later, on macOS or Linux:
 
 ```bash
-swift test --package-path Core
+swift test --package-path Core --skip LocalizationTests
 ```
+
+`LocalizationTests` checks the app's string catalogs in `Resources/`, which are not in this snapshot, so
+it is skipped here and in CI. Every other core test runs.
 
 The app needs macOS with Xcode 26, XcodeGen, and the `Resources/` folder from the private repository:
 
