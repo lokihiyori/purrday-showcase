@@ -11,7 +11,7 @@
   <img alt="Swift 6" src="https://img.shields.io/badge/Swift-6-F05138?logo=swift&logoColor=white" />
   <img alt="iOS 26" src="https://img.shields.io/badge/iOS-26-1c1c1e?logo=apple&logoColor=white" />
   <img alt="SwiftUI" src="https://img.shields.io/badge/UI-SwiftUI-0a84ff" />
-  <img alt="Tests" src="https://img.shields.io/badge/tests-350%2B-2ea043" />
+  <img alt="349 tests" src="https://img.shields.io/badge/tests-349-2ea043" />
 </p>
 
 > **This is a public snapshot.** Purrday is in active development in a private repository. This
@@ -52,8 +52,8 @@ in the core and planned for the app.
 - **Deep platform integration.** AlarmKit, App Intents, WidgetKit, ActivityKit, WeatherKit with
   reduced-accuracy location, AVFoundation for bedtime audio, and StoreKit.
 - **Swift 6 strict concurrency** across the app and its widget extension.
-- **350+ tests** in Swift Testing for the core and the app layer, plus an XCUITest walkthrough that taps
-  through the whole app from onboarding and screenshots every screen in each language.
+- **349 tests** in Swift Testing (273 for the core, 76 for the app layer), plus an XCUITest walkthrough
+  that taps through the whole app from onboarding and screenshots every screen in each language.
 - **A generated project.** The Xcode project is generated from [`project.yml`](project.yml) with
   XcodeGen, so no `.xcodeproj` is checked in.
 
