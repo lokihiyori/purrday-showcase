@@ -1,0 +1,143 @@
+# Purrday 的 Xcode 工程定义（XcodeGen）。在 Mac 上生成工程：
+#   brew install xcodegen && xcodegen generate && open Purrday.xcodeproj
+# 生成的 Purrday.xcodeproj 不进仓库（见 .gitignore），改工程设置请改这个文件。
+name: Purrday
+options:
+  bundleIdPrefix: com.purrday
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: ""            # TODO(Mac)：填你的 Team ID
+    SWIFT_EMIT_LOC_STRINGS: YES
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+packages:
+  PurrdayCore:
+    path: Core
+targets:
+  Purrday:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      - path: Features
+      - path: Resources
+    dependencies:
+      - target: PurrdayWidgets
+      - package: PurrdayCore
+        product: CatWorld
+      - package: PurrdayCore
+        product: CatEngine
+      - package: PurrdayCore
+        product: Economy
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Purrday
+        CFBundleDevelopmentRegion: en
+        CFBundleLocalizations: [en, zh-Hans, zh-Hant, ja]
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UIBackgroundModes: [audio]
+        UIAppFonts: [PurrdayKai-Medium.ttf]
+        NSSupportsLiveActivities: true
+        NSAlarmKitUsageDescription: "Purrday uses alarms so your cat can wake you up, even in Silent mode or a Focus."
+        # 窗外跟着用户那里（默认关，用户自己打开）：只要大概的位置
+        NSLocationWhenInUseUsageDescription: "Purrday uses your approximate location so the weather and daylight outside your cat's window match where you are."
+        NSLocationDefaultAccuracyReduced: true
+    entitlements:
+      path: App/Purrday.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.purrday.app]
+        # TODO(Mac)：有付费的开发者账号、给 App ID 开通 WeatherKit 以后去掉注释（docs/mac-setup.md 第 4 节）。
+        # 免费的个人团队不支持 WeatherKit，带着这一行会签不了名、装不到真机上。
+        # com.apple.developer.weatherkit: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.purrday.app   # TODO(Mac)：换成你自己的
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        SWIFT_STRICT_CONCURRENCY: complete
+        TARGETED_DEVICE_FAMILY: "1"
+  PurrdayWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Widgets
+      - path: App/Store/WorldStorage.swift
+      - path: App/Store/AppGroup.swift
+      - path: App/Services/AlarmMetadata.swift
+      - path: Features/Room/CatArt.swift
+      - path: Features/Room/CatArtNames.swift
+      - path: Resources/Assets.xcassets
+      - path: Resources/Localizable.xcstrings
+    dependencies:
+      - package: PurrdayCore
+        product: CatWorld
+      - package: PurrdayCore
+        product: CatEngine
+      - package: PurrdayCore
+        product: Economy
+    info:
+      path: Widgets/Info.plist
+      properties:
+        CFBundleDisplayName: Purrday
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: Widgets/PurrdayWidgets.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.purrday.app]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.purrday.app.widgets
+        SWIFT_STRICT_CONCURRENCY: complete
+        TARGETED_DEVICE_FAMILY: "1"
+  PurrdayTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: AppTests
+    dependencies:
+      - target: Purrday
+      - package: PurrdayCore
+        product: CatWorld
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES   # 本地签名需要；CI 用 CODE_SIGNING_ALLOWED=NO 时不报错
+  # 在模拟器里自动点一遍 App 并截图：scripts/ui_walkthrough.sh（不进 Purrday scheme，不影响单元测试速度）
+  PurrdayUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: UITests
+      - path: Resources/Localizable.xcstrings   # 测试里按语言查按钮文字（系统弹窗、标签栏）
+    dependencies:
+      - target: Purrday
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_EMIT_LOC_STRINGS: NO
+        TARGETED_DEVICE_FAMILY: "1"
+schemes:
+  Purrday:
+    build:
+      targets:
+        Purrday: all
+        PurrdayTests: [test]
+    test:
+      targets:
+        - PurrdayTests
+  PurrdayWalkthrough:
+    build:
+      targets:
+        Purrday: all
+        PurrdayUITests: [test]
+    test:
+      targets:
+        - PurrdayUITests

@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+._*
+
+# Xcode
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xcresult
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# XcodeGen output (the project is defined in project.yml)
+Purrday.xcodeproj/
+App/Info.plist
+App/Purrday.entitlements
+Widgets/Info.plist
+Widgets/PurrdayWidgets.entitlements
+
+# Local configuration and signing material
+.env
+.env.*
+*.xcconfig.local
+*.p8
+*.p12
+*.mobileprovision
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~

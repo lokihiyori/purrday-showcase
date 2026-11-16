@@ -1,0 +1,703 @@
+{
+  "version": 1,
+  "defaultCoat": "coat.pudding",
+  "items": [
+    {
+      "id": "gift.fish_cracker",
+      "kind": "gift",
+      "rarity": "common",
+      "nameKey": "item.gift.fish_cracker",
+      "name": "小鱼饼干",
+      "price": null,
+      "sellPrice": 2,
+      "plusOnly": false
+    },
+    {
+      "id": "gift.milk_cap",
+      "kind": "gift",
+      "rarity": "common",
+      "nameKey": "item.gift.milk_cap",
+      "name": "牛奶瓶盖",
+      "price": null,
+      "sellPrice": 2,
+      "plusOnly": false
+    },
+    {
+      "id": "gift.toast_crust",
+      "kind": "gift",
+      "rarity": "common",
+      "nameKey": "item.gift.toast_crust",
+      "name": "吐司边",
+      "price": null,
+      "sellPrice": 2,
+      "plusOnly": false
+    },
+    {
+      "id": "gift.yarn_ball",
+      "kind": "gift",
+      "rarity": "common",
+      "nameKey": "item.gift.yarn_ball",
+      "name": "小毛线球",
+      "price": null,
+      "sellPrice": 2,
+      "plusOnly": false
+    },
+    {
+      "id": "gift.cherry_tomato",
+      "kind": "gift",
+      "rarity": "common",
+      "nameKey": "item.gift.cherry_tomato",
+      "name": "小番茄",
+      "price": null,
+      "sellPrice": 2,
+      "plusOnly": false
+    },
+    {
+      "id": "gift.sakura_petal",
+      "kind": "gift",
+      "rarity": "uncommon",
+      "nameKey": "item.gift.sakura_petal",
+      "name": "樱花瓣",
+      "price": null,
+      "sellPrice": 5,
+      "plusOnly": false
+    },
+    {
+      "id": "gift.ribbon",
+      "kind": "gift",
+      "rarity": "uncommon",
+      "nameKey": "item.gift.ribbon",
+      "name": "蝴蝶结",
+      "price": null,
+      "sellPrice": 5,
+      "plusOnly": false
+    },
+    {
+      "id": "gift.tiny_bell",
+      "kind": "gift",
+      "rarity": "uncommon",
+      "nameKey": "item.gift.tiny_bell",
+      "name": "小铃铛",
+      "price": null,
+      "sellPrice": 5,
+      "plusOnly": false
+    },
+    {
+      "id": "gift.honey_jar",
+      "kind": "gift",
+      "rarity": "uncommon",
+      "nameKey": "item.gift.honey_jar",
+      "name": "迷你蜂蜜罐",
+      "price": null,
+      "sellPrice": 5,
+      "plusOnly": false
+    },
+    {
+      "id": "gift.star_candy",
+      "kind": "gift",
+      "rarity": "rare",
+      "nameKey": "item.gift.star_candy",
+      "name": "星星糖",
+      "price": null,
+      "sellPrice": 12,
+      "plusOnly": false
+    },
+    {
+      "id": "gift.golden_fishbone",
+      "kind": "gift",
+      "rarity": "rare",
+      "nameKey": "item.gift.golden_fishbone",
+      "name": "金色鱼骨",
+      "price": null,
+      "sellPrice": 12,
+      "plusOnly": false
+    },
+    {
+      "id": "gift.moon_pebble",
+      "kind": "gift",
+      "rarity": "rare",
+      "nameKey": "item.gift.moon_pebble",
+      "name": "月亮石",
+      "price": null,
+      "sellPrice": 12,
+      "plusOnly": false
+    },
+    {
+      "id": "gift.pudding_crown",
+      "kind": "gift",
+      "rarity": "legendary",
+      "nameKey": "item.gift.pudding_crown",
+      "name": "布丁王冠",
+      "price": null,
+      "sellPrice": 30,
+      "plusOnly": false
+    },
+    {
+      "id": "souvenir.maple_leaf",
+      "kind": "souvenir",
+      "rarity": "common",
+      "nameKey": "item.souvenir.maple_leaf",
+      "name": "枫叶",
+      "price": null,
+      "sellPrice": null,
+      "plusOnly": false
+    },
+    {
+      "id": "souvenir.pinecone",
+      "kind": "souvenir",
+      "rarity": "common",
+      "nameKey": "item.souvenir.pinecone",
+      "name": "松果",
+      "price": null,
+      "sellPrice": null,
+      "plusOnly": false
+    },
+    {
+      "id": "souvenir.acorn",
+      "kind": "souvenir",
+      "rarity": "common",
+      "nameKey": "item.souvenir.acorn",
+      "name": "橡果",
+      "price": null,
+      "sellPrice": null,
+      "plusOnly": false
+    },
+    {
+      "id": "souvenir.feather",
+      "kind": "souvenir",
+      "rarity": "uncommon",
+      "nameKey": "item.souvenir.feather",
+      "name": "羽毛",
+      "price": null,
+      "sellPrice": null,
+      "plusOnly": false
+    },
+    {
+      "id": "souvenir.smooth_stone",
+      "kind": "souvenir",
+      "rarity": "uncommon",
+      "nameKey": "item.souvenir.smooth_stone",
+      "name": "圆石头",
+      "price": null,
+      "sellPrice": null,
+      "plusOnly": false
+    },
+    {
+      "id": "souvenir.four_leaf_clover",
+      "kind": "souvenir",
+      "rarity": "rare",
+      "nameKey": "item.souvenir.four_leaf_clover",
+      "name": "四叶草",
+      "price": null,
+      "sellPrice": null,
+      "plusOnly": false
+    },
+    {
+      "id": "furniture.cardboard_box",
+      "kind": "furniture",
+      "rarity": "common",
+      "nameKey": "item.furniture.cardboard_box",
+      "name": "纸箱",
+      "price": 10,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "floor",
+        "x": 0.72,
+        "y": 0.95,
+        "width": 0.2333,
+        "height": 0.1375,
+        "spots": [
+          {"uses": ["hide", "nap", "loaf"], "dx": 0, "dy": -0.012, "layer": "inside", "weight": 2}
+        ]
+      }
+    },
+    {
+      "id": "furniture.cushion",
+      "kind": "furniture",
+      "rarity": "common",
+      "nameKey": "item.furniture.cushion",
+      "name": "软垫",
+      "price": 15,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "floor",
+        "x": 0.24,
+        "y": 0.93,
+        "width": 0.2167,
+        "height": 0.0625,
+        "spots": [
+          {"uses": ["nap", "loaf", "sit", "groom"], "dx": 0, "dy": -0.035, "layer": "on", "weight": 1.5}
+        ]
+      }
+    },
+    {
+      "id": "furniture.food_bowl",
+      "kind": "furniture",
+      "rarity": "common",
+      "nameKey": "item.furniture.food_bowl",
+      "name": "猫碗",
+      "price": 15,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "floor",
+        "x": 0.6,
+        "y": 0.8,
+        "width": 0.1333,
+        "height": 0.05,
+        "spots": [
+          {"uses": ["eat"], "dx": 0.135, "dy": 0.012, "layer": "floor"},
+          {"uses": ["eat"], "dx": -0.135, "dy": 0.012, "layer": "floor"}
+        ]
+      }
+    },
+    {
+      "id": "furniture.water_fountain",
+      "kind": "furniture",
+      "rarity": "common",
+      "nameKey": "item.furniture.water_fountain",
+      "name": "小喷泉",
+      "price": 25,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "floor",
+        "x": 0.74,
+        "y": 0.8,
+        "width": 0.1333,
+        "height": 0.1,
+        "spots": [
+          {"uses": ["drink"], "dx": 0.13, "dy": 0.012, "layer": "floor"},
+          {"uses": ["drink"], "dx": -0.13, "dy": 0.012, "layer": "floor"}
+        ]
+      }
+    },
+    {
+      "id": "furniture.scratching_post",
+      "kind": "furniture",
+      "rarity": "common",
+      "nameKey": "item.furniture.scratching_post",
+      "name": "猫抓柱",
+      "price": 30,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "floor",
+        "x": 0.42,
+        "y": 0.72,
+        "width": 0.1333,
+        "height": 0.225,
+        "spots": [
+          {"uses": ["scratch"], "dx": 0.13, "dy": 0.01, "layer": "floor"},
+          {"uses": ["scratch"], "dx": -0.13, "dy": 0.01, "layer": "floor"}
+        ]
+      }
+    },
+    {
+      "id": "furniture.sunflower_vase",
+      "kind": "furniture",
+      "rarity": "common",
+      "nameKey": "item.furniture.sunflower_vase",
+      "name": "向日葵花瓶",
+      "price": 30,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "floor",
+        "x": 0.56,
+        "y": 0.69,
+        "width": 0.1167,
+        "height": 0.1625,
+        "spots": [
+          {"uses": ["sit"], "dx": 0.14, "dy": 0.015, "layer": "floor", "weight": 0.5}
+        ]
+      }
+    },
+    {
+      "id": "furniture.rug_round",
+      "kind": "furniture",
+      "rarity": "common",
+      "nameKey": "item.furniture.rug_round",
+      "name": "圆地毯",
+      "price": 35,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "rug",
+        "x": 0.5,
+        "y": 0.95,
+        "width": 0.6,
+        "height": 0.1125,
+        "spots": [
+          {"uses": ["nap", "loaf", "groom", "sit"], "dx": -0.1, "dy": -0.04, "layer": "floor", "weight": 1.5},
+          {"uses": ["loaf", "groom", "sit"], "dx": 0.12, "dy": -0.035, "layer": "floor"}
+        ]
+      }
+    },
+    {
+      "id": "furniture.plant_monstera",
+      "kind": "furniture",
+      "rarity": "uncommon",
+      "nameKey": "item.furniture.plant_monstera",
+      "name": "龟背竹",
+      "price": 40,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "floor",
+        "x": 0.1,
+        "y": 0.98,
+        "width": 0.2,
+        "height": 0.225,
+        "spots": [
+          {"uses": ["sit", "groom"], "dx": 0.16, "dy": -0.01, "layer": "floor", "weight": 0.5}
+        ]
+      }
+    },
+    {
+      "id": "furniture.cat_tunnel",
+      "kind": "furniture",
+      "rarity": "uncommon",
+      "nameKey": "item.furniture.cat_tunnel",
+      "name": "猫隧道",
+      "price": 40,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "floor",
+        "x": 0.36,
+        "y": 0.99,
+        "width": 0.3333,
+        "height": 0.1125,
+        "spots": [
+          {"uses": ["loaf", "sit"], "dx": 0.03, "dy": -0.095, "layer": "on"}
+        ]
+      }
+    },
+    {
+      "id": "furniture.floor_lamp",
+      "kind": "furniture",
+      "rarity": "uncommon",
+      "nameKey": "item.furniture.floor_lamp",
+      "name": "落地灯",
+      "price": 45,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "floor",
+        "x": 0.92,
+        "y": 0.84,
+        "width": 0.15,
+        "height": 0.375
+      }
+    },
+    {
+      "id": "furniture.tea_table",
+      "kind": "furniture",
+      "rarity": "uncommon",
+      "nameKey": "item.furniture.tea_table",
+      "name": "小茶几",
+      "price": 50,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "floor",
+        "x": 0.5,
+        "y": 0.85,
+        "width": 0.3,
+        "height": 0.1125,
+        "spots": [
+          {"uses": ["loaf", "sit", "perch", "groom"], "dx": 0, "dy": -0.09, "layer": "on"}
+        ]
+      }
+    },
+    {
+      "id": "furniture.wall_shelf",
+      "kind": "furniture",
+      "rarity": "uncommon",
+      "nameKey": "item.furniture.wall_shelf",
+      "name": "墙面跳台",
+      "price": 55,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "wall",
+        "x": 0.8,
+        "y": 0.3,
+        "width": 0.25,
+        "height": 0.05,
+        "spots": [
+          {"uses": ["perch", "loaf"], "dx": 0, "dy": -0.035, "layer": "on"}
+        ]
+      }
+    },
+    {
+      "id": "furniture.window_hammock",
+      "kind": "furniture",
+      "rarity": "uncommon",
+      "nameKey": "item.furniture.window_hammock",
+      "name": "窗边吊床",
+      "price": 60,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "wall",
+        "x": 0.5,
+        "y": 0.3,
+        "width": 0.3167,
+        "height": 0.0875,
+        "spots": [
+          {"uses": ["nap", "sunbathe", "watch", "loaf"], "dx": 0, "dy": -0.0175, "layer": "inside", "weight": 2}
+        ]
+      }
+    },
+    {
+      "id": "furniture.radio",
+      "kind": "furniture",
+      "rarity": "uncommon",
+      "nameKey": "item.furniture.radio",
+      "name": "复古收音机",
+      "price": 65,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "floor",
+        "x": 0.62,
+        "y": 0.69,
+        "width": 0.1333,
+        "height": 0.075,
+        "spots": [
+          {"uses": ["loaf"], "dx": 0.13, "dy": 0.015, "layer": "floor", "weight": 0.5}
+        ]
+      }
+    },
+    {
+      "id": "furniture.bookshelf",
+      "kind": "furniture",
+      "rarity": "uncommon",
+      "nameKey": "item.furniture.bookshelf",
+      "name": "小书架",
+      "price": 70,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "floor",
+        "x": 0.86,
+        "y": 0.7,
+        "width": 0.25,
+        "height": 0.2875,
+        "spots": [
+          {"uses": ["perch", "loaf", "nap"], "dx": 0.04, "dy": -0.228, "layer": "on"}
+        ]
+      }
+    },
+    {
+      "id": "furniture.star_lights",
+      "kind": "furniture",
+      "rarity": "uncommon",
+      "nameKey": "item.furniture.star_lights",
+      "name": "星星灯串",
+      "price": 75,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "wall",
+        "x": 0.5,
+        "y": 0.1,
+        "width": 0.5667,
+        "height": 0.075
+      }
+    },
+    {
+      "id": "furniture.bed_cloud",
+      "kind": "furniture",
+      "rarity": "rare",
+      "nameKey": "item.furniture.bed_cloud",
+      "name": "云朵床",
+      "price": 90,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "floor",
+        "x": 0.78,
+        "y": 0.99,
+        "width": 0.3333,
+        "height": 0.125,
+        "spots": [
+          {"uses": ["nap", "loaf"], "dx": 0, "dy": -0.025, "layer": "inside", "weight": 3}
+        ]
+      }
+    },
+    {
+      "id": "furniture.fish_tank",
+      "kind": "furniture",
+      "rarity": "rare",
+      "nameKey": "item.furniture.fish_tank",
+      "name": "鱼缸",
+      "price": 110,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "floor",
+        "x": 0.66,
+        "y": 0.68,
+        "width": 0.2333,
+        "height": 0.2125,
+        "spots": [
+          {"uses": ["watch"], "dx": 0.11, "dy": 0.02, "layer": "floor", "weight": 2},
+          {"uses": ["perch", "loaf"], "dx": 0, "dy": -0.195, "layer": "on"}
+        ]
+      }
+    },
+    {
+      "id": "furniture.cat_tree",
+      "kind": "furniture",
+      "rarity": "rare",
+      "nameKey": "item.furniture.cat_tree",
+      "name": "猫爬架",
+      "price": 120,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "floor",
+        "x": 0.15,
+        "y": 0.8,
+        "width": 0.2833,
+        "height": 0.45,
+        "spots": [
+          {"uses": ["perch", "nap", "loaf"], "dx": 0.047, "dy": -0.298, "layer": "on", "weight": 2},
+          {"uses": ["sit", "loaf", "perch"], "dx": -0.067, "dy": -0.2, "layer": "on"},
+          {"uses": ["scratch"], "dx": 0.22, "dy": 0.01, "layer": "floor"}
+        ]
+      }
+    },
+    {
+      "id": "furniture.pudding_sofa",
+      "kind": "furniture",
+      "rarity": "rare",
+      "nameKey": "item.furniture.pudding_sofa",
+      "name": "布丁沙发",
+      "price": 150,
+      "sellPrice": null,
+      "plusOnly": false,
+      "placement": {
+        "zone": "floor",
+        "x": 0.3,
+        "y": 0.75,
+        "width": 0.4333,
+        "height": 0.2125,
+        "spots": [
+          {"uses": ["nap", "loaf", "sit", "groom"], "dx": -0.06, "dy": -0.09, "layer": "on", "weight": 2},
+          {"uses": ["sit", "loaf"], "dx": 0.08, "dy": -0.09, "layer": "on"}
+        ]
+      }
+    },
+    {
+      "id": "coat.pudding",
+      "kind": "coat",
+      "rarity": "common",
+      "nameKey": "item.coat.pudding",
+      "name": "布丁（奶油色 + 焦糖头顶）",
+      "price": null,
+      "sellPrice": null,
+      "plusOnly": false
+    },
+    {
+      "id": "coat.orange",
+      "kind": "coat",
+      "rarity": "rare",
+      "nameKey": "item.coat.orange",
+      "name": "橘猫",
+      "price": null,
+      "sellPrice": null,
+      "plusOnly": true
+    },
+    {
+      "id": "coat.tuxedo",
+      "kind": "coat",
+      "rarity": "rare",
+      "nameKey": "item.coat.tuxedo",
+      "name": "奶牛猫",
+      "price": null,
+      "sellPrice": null,
+      "plusOnly": true
+    },
+    {
+      "id": "coat.calico",
+      "kind": "coat",
+      "rarity": "rare",
+      "nameKey": "item.coat.calico",
+      "name": "三花",
+      "price": null,
+      "sellPrice": null,
+      "plusOnly": true
+    },
+    {
+      "id": "coat.black",
+      "kind": "coat",
+      "rarity": "rare",
+      "nameKey": "item.coat.black",
+      "name": "黑猫",
+      "price": null,
+      "sellPrice": null,
+      "plusOnly": true
+    },
+    {
+      "id": "coat.siamese",
+      "kind": "coat",
+      "rarity": "rare",
+      "nameKey": "item.coat.siamese",
+      "name": "暹罗",
+      "price": null,
+      "sellPrice": null,
+      "plusOnly": true
+    }
+  ],
+  "lootTables": {
+    "breakfast": {
+      "items": [
+        "gift.fish_cracker",
+        "gift.milk_cap",
+        "gift.toast_crust",
+        "gift.yarn_ball",
+        "gift.cherry_tomato",
+        "gift.sakura_petal",
+        "gift.ribbon",
+        "gift.tiny_bell",
+        "gift.honey_jar",
+        "gift.star_candy",
+        "gift.golden_fishbone",
+        "gift.moon_pebble",
+        "gift.pudding_crown"
+      ],
+      "rarityWeights": {
+        "common": 70,
+        "uncommon": 22,
+        "rare": 7,
+        "legendary": 1
+      },
+      "luckyMultipliers": {
+        "rare": 2.5,
+        "legendary": 3
+      }
+    },
+    "souvenir": {
+      "items": [
+        "souvenir.maple_leaf",
+        "souvenir.pinecone",
+        "souvenir.acorn",
+        "souvenir.feather",
+        "souvenir.smooth_stone",
+        "souvenir.four_leaf_clover"
+      ],
+      "rarityWeights": {
+        "common": 70,
+        "uncommon": 25,
+        "rare": 5
+      },
+      "luckyMultipliers": {}
+    }
+  }
+}
